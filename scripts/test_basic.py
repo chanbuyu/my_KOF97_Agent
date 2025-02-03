@@ -1,6 +1,6 @@
 from MAMEToolkit.emulator import Emulator
-from actions import Actions
-from address import setup_memory_addresses
+from king_of_fighter.actions import Actions
+from king_of_fighter.address import setup_memory_addresses
 import time
 
 def test_basic_functions():
