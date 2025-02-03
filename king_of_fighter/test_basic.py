@@ -1,7 +1,16 @@
-from MAMEToolkit.emulator import Emulator
-from king_of_fighter.actions import Actions
-from king_of_fighter.address import setup_memory_addresses
+#from MAMEToolkit.emulator import Emulator
+from actions import Actions
+from address import setup_memory_addresses
 import time
+import sys
+import os
+
+# 添加项目根目录到Python路径
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.append(project_root)
+
+# 测试导入是否成功
+print("Successfully imported Actions")
 
 def test_basic_functions():
     try:
